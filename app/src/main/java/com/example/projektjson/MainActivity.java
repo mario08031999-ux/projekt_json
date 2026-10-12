@@ -79,9 +79,12 @@ public class MainActivity extends AppCompatActivity {
 
                         elementyListy.clear();
 
-                        Calendar calendar = Calendar.getInstance();
 
                         for (Ogloszenia ogloszenia: odpowiedz){
+                            Calendar calendar = Calendar.getInstance();
+
+                            calendar.set(ogloszenia.getRok(), ogloszenia.getMiesiac() - 1, ogloszenia.getDzien());
+
                             int rok = calendar.get(java.util.Calendar.YEAR);
                             int miesiac = calendar.get(java.util.Calendar.MONTH) + 1;
                             int dzien = calendar.get(java.util.Calendar.DAY_OF_MONTH);
