@@ -6,10 +6,33 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity" >
+    android:background="#F4F6F9"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:text="Najważniejsze ogłoszenia"
+        android:textColor="#1A1C1E"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-medium" />
 
     <ListView
         android:id="@+id/listView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="8dp"
+        android:padding="8dp"
+        android:elevation="4dp"
+        android:dividerHeight="1dp"
+        android:clipToPadding="false"
+        android:scrollbarStyle="outsideOverlay" />
+
 </LinearLayout>

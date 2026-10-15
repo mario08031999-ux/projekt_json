@@ -88,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
                             int rok = calendar.get(java.util.Calendar.YEAR);
                             int miesiac = calendar.get(java.util.Calendar.MONTH) + 1;
                             int dzien = calendar.get(java.util.Calendar.DAY_OF_MONTH);
-                            String textElementu = ogloszenia.getTytul() +
+                            String textElementu = "Temat: "+ ogloszenia.getTytul() +
                                     "\n" + ogloszenia.getTresc() +
                                     "\n" + dzien +"." + miesiac + "." + rok;
                             elementyListy.add(textElementu);
